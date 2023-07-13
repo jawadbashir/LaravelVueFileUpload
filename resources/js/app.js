@@ -3,12 +3,12 @@ import '../sass/app.scss';
 import {createApp} from 'vue/dist/vue.esm-bundler.js';
 import * as VueRouter from 'vue-router';
 import MainCom from './Components/MainComponent.vue';
-import TaskComponent from './Components/TaskComponent.vue';
+import UploadComponent from './Components/UploadComponent.vue';
 
 
 const routes = [
     { path: '/', component: MainCom },
-    { path: '/tasks', component: TaskComponent },
+    { path: '/fileUpload', component: UploadComponent },
 ]
 
 const router = VueRouter.createRouter({

@@ -1,7 +1,6 @@
 <?php
 
-use App\Http\Controllers\TaskController;
-use Illuminate\Http\Request;
+use App\Http\Controllers\FileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-Route::post('/upload', [TaskController::class, 'upload']);
+
+Route::post('/upload', [FileController::class, 'upload']);

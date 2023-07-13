@@ -1,10 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Tasks;
 use Illuminate\Http\Request;
 
-class TaskController extends Controller
+class FileController extends Controller
 {
     //
     public function upload(Request $request)
